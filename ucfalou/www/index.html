@@ -59,7 +59,22 @@
       z-index: 900;
     }
     </style>
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"
+   	integrity="sha512wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw=="
+   	crossorigin=""/>
+
+	<script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"
+   	integrity="sha512mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
+   	crossorigin=""></script>
+
+	<style type="text/css">
+	#mapid{height:500px;}
+	</style>
+	<
+	
   </head>
+  
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
@@ -79,9 +94,10 @@
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-            <li class="mdl-menu__item">About</li>
-            <li class="mdl-menu__item">Contact</li>
-            <li class="mdl-menu__item"onclick="menuClick()">Div change</li>
+            <li class="mdl-menu__item"><a href="simpleMapGeoJSON.html">About</a></li>
+            <li class="mdl-menu__item" onclick="addUCLLogo()">Contact</li>
+            <li class="mdl-menu__item" onclick="menuClicked()">Div Change</li>
+	
           </ul>
         </div>
       </header>
@@ -106,12 +122,12 @@
           </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
+          <a class="mdl-navigation__link" href="" onclick="getPort1(); return false;"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>getPort</a>
+		  <a class="mdl-navigation__link" href="" onclick="getEarthquakes(); return false;"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>get Earthquakes</a>         
+          <a class="mdl-navigation__link" href="" onclick="trackLocation(); return false;"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>track Location</a>
+		  <a class="mdl-navigation__link" href="" onclick="addPointLinePoly(); return false;"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>addPointLinePoly</a>
+          <a class="mdl-navigation__link" href="" onclick="trackAndCircle(); return false;"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>trackAndCircle</a>
+          <a class="mdl-navigation__link" href="" onclick="callDivNodeJSChange(); return false;"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Change DIV Content</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>
@@ -120,14 +136,28 @@
         </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
+		 
         <div class="mdl-grid demo-content">
             <div class="demo-separator mdl-cell--1-col"></div>
-            <div id="ucllogo" name="ucllogo">div goes here </div>
+            <div id="ucllogo" name="ucllogo">div goes here: ucl logo </div>
+            <div id="mapid" style="width: 1000px; height: 800px;"></div>
+			<div id="ajaxtest" style="width: 1600px; height: 20px;"></div>
           </div>
-        </div>
+		  </div>
       </main>
     </div>
+	
+	
+	
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	<script src="js/rhMenu.js"></script>
-  </body>
+    <script src="js/rhMenu.js"></script>
+	<script src="js/leaflet.js"></script>
+	<script src="js/leafletFunction.js"></script>
+	<script src="js/userTracking.js"></script>
+	<script src="js/startup.js"></script>
+	<script src="js/utilities.js"></script>
+	<script src="js/AJAX.js"></script>
+	<script>startup(); </script>
+
+</body>
 </html>
