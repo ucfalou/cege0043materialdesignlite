@@ -23,43 +23,43 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-compat": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-globalization": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "fullmaterialdesignlite"
+      "PACKAGE_NAME": "locationbasedquizApp"
     }
   },
   "dependent_plugins": {},

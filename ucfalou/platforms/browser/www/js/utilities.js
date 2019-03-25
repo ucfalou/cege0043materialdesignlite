@@ -1,6 +1,15 @@
 var httpPortNumber; 
 var httpsPortNumber; 
 
+
+
+function getPort2()
+{
+	httpPortNumber =30293;
+    httpsPortNumber=31093;
+	alert("Port : " + httpPortNumber); 
+	} 
+
 function getPort(){ 
     var xhr = new XMLHttpRequest(); 
     xhr.addEventListener("load", function () { 
@@ -19,8 +28,3 @@ function getPort(){
     xhr.send(); 
  
 } 
-
-function getPort1(){ 
-	 httpPortNumber=30093;
-	  alert("Port : " + httpPortNumber);
-}

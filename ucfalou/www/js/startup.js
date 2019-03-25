@@ -27,7 +27,7 @@ var earthquakes;
 
 			   fillOpacity:0.05
 
-			   }).addTo(mymap).bindPopup('I am a circle.');
+			   }).addTo(mymap).bindPopup;
 		
 		var userPolygon =L.polygon([
 		[position.coords.latitude+0.0005,position.coords.longitude],
@@ -35,12 +35,21 @@ var earthquakes;
 		[position.coords.latitude-0.0005,position.coords.longitude+0.0005]
 		],{color:'red',fillColor:"#f03",fillOpacity:0.05}).addTo(mymap).bindPopup('I am a polygon');
 	
-		getEarthquakes();
+		
 		}
+
+
+
 
 
 	function startup(){
 	document.addEventListener('DOMContentLoaded',function(){
-		trackAndCircle();getDistance();
+		trackAndCircle();getDistance();startFormDataLoad()
 	},false);
 }	     
+
+    function loadW3HTML() {
+         w3.includeHTML();
+}
+
+
